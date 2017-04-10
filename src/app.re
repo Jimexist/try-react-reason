@@ -1,17 +1,17 @@
-open ReactRe;
-
 module App = {
-  include Component;
+  include ReactRe.Component.JsProps;
   let name = "App";
-  type props = unit;
+  type props = {match: {..}};
+  type jsProps = Js.t {. match : Js.t {..}};
+  let jsPropsToReasonProps = Some (fun jsProps => {match: jsProps##match});
   let render {props} => {
     let className = "app-root";
     <div className>
-      (stringToElement "this is the app module and you are seeing the rendered result")
+      (ReactRe.stringToElement "this is the app module and you are seeing the rendered result")
     </div>
   };
 };
 
-include CreateComponent App;
+include ReactRe.CreateComponent App;
 
-let createElement = wrapProps ();
+let createElement ::match => wrapProps match;
