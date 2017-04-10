@@ -18,3 +18,11 @@ _build/
 # oasis generated files
 setup.data
 setup.log
+
+.DS_Store
+.merlin
+/node_modules/
+/lib/
+/bundledOutputs/
+npm-debug.log
+/_build/

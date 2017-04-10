@@ -1,0 +1,25 @@
+{
+  "name": "try-react-reason",
+  "version": "0.1.0",
+  "description": "try reason with react",
+  "main": "index.js",
+  "repository": "https://github.com/Jimexist/try-react-reason",
+  "author": "Jiayu Liu <jiayu@madadata.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --watch --progress --config ./webpack.config.js",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.6",
+    "react": "^15.5.3",
+    "react-dom": "^15.5.3",
+    "reason-js": "^0.3.0",
+    "reason-react": "^0.1.0"
+  },
+  "devDependencies": {
+    "bs-platform": "^1.6.0",
+    "webpack": "^2.3.3"
+  }
+}
