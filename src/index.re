@@ -1,1 +1,1 @@
-ReactDOMRe.renderToElementWithId <App /> "app";
+ReactDOMRe.renderToElementWithId <RouterRe> <App /> </RouterRe> "app";
